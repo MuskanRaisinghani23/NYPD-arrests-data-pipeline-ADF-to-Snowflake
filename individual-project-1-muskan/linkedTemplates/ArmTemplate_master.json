@@ -1,0 +1,84 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "individual-project-1-muskan"
+		},
+		"Individual_Project_DLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'Individual_Project_DLS'"
+		},
+		"NYPD_Snowflake_Connection_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'NYPD_Snowflake_Connection'"
+		},
+		"Individual_Project_BlobS_sasUri": {
+			"type": "secureString",
+			"metadata": "Secure string for 'sasUri' of 'Individual_Project_BlobS'"
+		},
+		"Individual_Project_DLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://damg7370muskan.dfs.core.windows.net/"
+		},
+		"NYPD_Snowflake_Connection_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "DADABI_DB"
+		},
+		"NYPD_Snowflake_Connection_properties_typeProperties_role": {
+			"type": "string",
+			"defaultValue": "DEVELOPER"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "individual-project-1-muskan_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"Individual_Project_DLS_accountKey": {
+						"value": "[parameters('Individual_Project_DLS_accountKey')]"
+					},
+					"NYPD_Snowflake_Connection_password": {
+						"value": "[parameters('NYPD_Snowflake_Connection_password')]"
+					},
+					"Individual_Project_BlobS_sasUri": {
+						"value": "[parameters('Individual_Project_BlobS_sasUri')]"
+					},
+					"Individual_Project_DLS_properties_typeProperties_url": {
+						"value": "[parameters('Individual_Project_DLS_properties_typeProperties_url')]"
+					},
+					"NYPD_Snowflake_Connection_properties_typeProperties_database": {
+						"value": "[parameters('NYPD_Snowflake_Connection_properties_typeProperties_database')]"
+					},
+					"NYPD_Snowflake_Connection_properties_typeProperties_role": {
+						"value": "[parameters('NYPD_Snowflake_Connection_properties_typeProperties_role')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

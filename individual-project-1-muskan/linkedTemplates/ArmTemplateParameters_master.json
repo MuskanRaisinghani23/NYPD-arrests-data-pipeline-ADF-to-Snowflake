@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "individual-project-1-muskan"
+		},
+		"Individual_Project_DLS_accountKey": {
+			"value": ""
+		},
+		"NYPD_Snowflake_Connection_password": {
+			"value": ""
+		},
+		"Individual_Project_BlobS_sasUri": {
+			"value": ""
+		},
+		"Individual_Project_DLS_properties_typeProperties_url": {
+			"value": "https://damg7370muskan.dfs.core.windows.net/"
+		},
+		"NYPD_Snowflake_Connection_properties_typeProperties_database": {
+			"value": "DADABI_DB"
+		},
+		"NYPD_Snowflake_Connection_properties_typeProperties_role": {
+			"value": "DEVELOPER"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
