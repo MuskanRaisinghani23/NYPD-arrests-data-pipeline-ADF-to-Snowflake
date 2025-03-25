@@ -1,0 +1,585 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NYPD_Arrest_Data__Year_to_Date__20250213.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ARREST_KEY" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="ARREST_DATE" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="PD_CD" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="PD_DESC" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="KY_CD" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="OFNS_DESC" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="LAW_CODE" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="LAW_CAT_CD" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="ARREST_BORO" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="ARREST_PRECINCT" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="JURISDICTION_CODE" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="AGE_GROUP" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="PERP_SEX" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="PERP_RACE" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="X_COORD_CD" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="Y_COORD_CD" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+            <Field name="New Georeferenced Column" size="254" source="File: D:\NEU\DADABI\Individual Project\NYPD_Arrest_Data__Year_to_Date__20250213.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\raisi\AppData\Local\Temp\Alteryx\Engine_19216_cba3ba329a514ddb8b799a1df6c6712c_\Engine_19216_7bd95cd6fb8042f7a2e3d6ff5bf30590~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="186" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeFormat(DateTimeParse([ARREST_DATE], &quot;%m/%d/%Y&quot;), &quot;%Y-%m-%d&quot;)" field="ARREST_DATE" size="254" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ARREST_DATE = DateTimeFormat(DateTimeParse([ARREST_DATE], "%m/%d/%Y"), "%Y-%m-%d...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="318" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ARREST_KEY" selected="True" />
+            <SelectField field="ARREST_DATE" selected="True" type="Date" size="10" />
+            <SelectField field="PD_CD" selected="True" type="Int64" size="8" />
+            <SelectField field="PD_DESC" selected="True" />
+            <SelectField field="KY_CD" selected="True" type="Int64" size="8" />
+            <SelectField field="OFNS_DESC" selected="True" />
+            <SelectField field="LAW_CODE" selected="True" />
+            <SelectField field="LAW_CAT_CD" selected="True" />
+            <SelectField field="ARREST_BORO" selected="True" />
+            <SelectField field="ARREST_PRECINCT" selected="True" type="Int64" size="8" />
+            <SelectField field="JURISDICTION_CODE" selected="True" type="Int64" size="8" />
+            <SelectField field="AGE_GROUP" selected="True" />
+            <SelectField field="PERP_SEX" selected="True" />
+            <SelectField field="PERP_RACE" selected="True" />
+            <SelectField field="X_COORD_CD" selected="True" type="Int64" size="8" />
+            <SelectField field="Y_COORD_CD" selected="True" type="Int64" size="8" />
+            <SelectField field="Latitude" selected="True" type="Double" size="8" />
+            <SelectField field="Longitude" selected="True" type="Double" size="8" />
+            <SelectField field="New Georeferenced Column" selected="True" size="440" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="426" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">ARREST_KEY=True,ARREST_DATE=True,PD_CD=True,PD_DESC=True,KY_CD=True,OFNS_DESC=True,LAW_CODE=True,LAW_CAT_CD=True,ARREST_BORO=True,ARREST_PRECINCT=True,JURISDICTION_CODE=True,AGE_GROUP=True,PERP_SEX=True,PERP_RACE=True,X_COORD_CD=True,Y_COORD_CD=True,Latitude=True,Longitude=True,New Georeferenced Column=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="426" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ARREST_KEY" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="546" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"PD_CD","KY_CD"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">False</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="618" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [LAW_CAT_CD] = &quot;F&quot; THEN &quot;Felony&quot;&#xA;ELSEIF [LAW_CAT_CD] = &quot;M&quot; THEN &quot;Misdemeanor&quot;&#xA;ELSEIF [LAW_CAT_CD] = &quot;V&quot; THEN &quot;Violence&quot;&#xA;ELSE &quot;Others&quot;&#xA;ENDIF" field="LAW_CAT_CD" size="254" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LAW_CAT_CD = IF [LAW_CAT_CD] = "F" THEN "Felony"
+ELSEIF [LAW_CAT_CD] = "M" THEN ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="714" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Latitude</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-02-13 20:13:46</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2025-02-13 20:13:46</StartDate>
+              <EndDate>2025-02-13 20:13:46</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Latitude] != 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="522" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\raisi\AppData\Local\Temp\Alteryx\Engine_19216_cba3ba329a514ddb8b799a1df6c6712c_\Engine_19216_8908304f2793435f961a999f70661337~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="834" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="X_COORD_CD" action="GroupBy" rename="X_COORD_CD" />
+            <SummarizeField field="Y_COORD_CD" action="GroupBy" rename="Y_COORD_CD" />
+            <SummarizeField field="Latitude" action="First" rename="Latitude_Lookup" />
+            <SummarizeField field="Longitude" action="First" rename="Longitude_Lookup" />
+            <SummarizeField field="New Georeferenced Column" action="First" rename="New_Georeferenced_Column_Lookup" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="954" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="X_COORD_CD" />
+            <Field field="Y_COORD_CD" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="X_COORD_CD" />
+            <Field field="Y_COORD_CD" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_X_COORD_CD" selected="True" rename="Right_X_COORD_CD" input="Right_" />
+                <SelectField field="Right_Y_COORD_CD" selected="True" rename="Right_Y_COORD_CD" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1062" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsEmpty([Latitude]) THEN [Latitude_Lookup]&#xA;ELSEIF IsNull([Latitude]) THEN [Latitude_Lookup]&#xA;ELSE [Latitude] &#xA;ENDIF" field="Latitude" size="8" type="Double" enabled="true" />
+            <FormulaField expression="IF IsEmpty([Longitude]) THEN [Longitude_Lookup] &#xA;ELSEIF IsNull([Longitude]) THEN [Longitude_Lookup]&#xA;ELSE [Longitude] &#xA;ENDIF" field="Longitude" size="8" type="Double" enabled="true" />
+            <FormulaField expression="IF IsEmpty([New Georeferenced Column]) THEN [New_Georeferenced_Column_Lookup]&#xA;ELSEIF IsNull([New Georeferenced Column]) THEN [New_Georeferenced_Column_Lookup]&#xA;ELSE [New Georeferenced Column]&#xA;ENDIF" field="New Georeferenced Column" size="440" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Latitude = IF IsEmpty([Latitude]) THEN [Latitude_Lookup]
+ELSEIF IsNull([Latitude...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1194" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsEmpty([Latitude]) AND !IsEmpty([Longitude])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([Latitude]) AND !IsEmpty([Longitude])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1290" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ARREST_KEY" selected="True" />
+            <SelectField field="ARREST_DATE" selected="True" />
+            <SelectField field="PD_CD" selected="True" />
+            <SelectField field="PD_DESC" selected="True" />
+            <SelectField field="KY_CD" selected="True" />
+            <SelectField field="OFNS_DESC" selected="True" />
+            <SelectField field="LAW_CODE" selected="True" />
+            <SelectField field="LAW_CAT_CD" selected="True" />
+            <SelectField field="ARREST_BORO" selected="True" />
+            <SelectField field="ARREST_PRECINCT" selected="True" />
+            <SelectField field="JURISDICTION_CODE" selected="True" />
+            <SelectField field="AGE_GROUP" selected="True" />
+            <SelectField field="PERP_SEX" selected="True" />
+            <SelectField field="PERP_RACE" selected="True" />
+            <SelectField field="X_COORD_CD" selected="True" />
+            <SelectField field="Y_COORD_CD" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="New Georeferenced Column" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1398" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">D:\NEU\DADABI\Individual Project\cleaned_nypd_arrest_data.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cleaned_nypd_arrest_data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Reports" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Unique" />
+      <Destination ToolID="15" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output26" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>data_profiling_and_cleaning</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3fe719aa-b3f3-45f1-a8cd-a9fb72d65372" />
+      <Telemetry>
+        <PreviousWorkflowId value="f87e4d2c-70b9-4867-963c-a801fafe12e6" />
+        <OriginWorkflowId value="f87e4d2c-70b9-4867-963c-a801fafe12e6" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
