@@ -38,3 +38,6 @@ This project focuses on designing a scalable and efficient data pipeline for NYP
 
 ### Step 5: Snowflake Data
 ![Alt text](./screenshots/snowflakeLoad.png)
+
+### Step 6: Data Visualization and Analysis
+![Alt text](./screenshots/dashboard.png)
