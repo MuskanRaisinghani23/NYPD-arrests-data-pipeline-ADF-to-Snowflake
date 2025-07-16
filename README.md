@@ -3,6 +3,8 @@
 ## **Overview**  
 This project focuses on designing a scalable and efficient data pipeline for NYPD crime and arrest data. The data is sourced from the NYPD website, updated regularly since June 5, 2018, and initially contained 260,503 records at the time of analysis.  
 
+[![Tableau Dashboard Link](https://img.shields.io/badge/Tableau_Dashboard_Link-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)](https://public.tableau.com/app/profile/muskan.deepak.raisinghani/viz/NYPDCRIMEARRESTSDASHBOARD/NYPDARRESTSDASHBOARD)
+
 ## **Technologies Used**  
 ![Snowflake](https://img.shields.io/badge/Snowflake-0093F1?style=for-the-badge&logo=snowflake&logoColor=white)
 ![Alteryx](https://img.shields.io/badge/Alteryx-E84D3D?style=for-the-badge&logoColor=white)
